@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>JAEU</title>
+<meta name="description" content="JAEU — 凡是过往，皆为序章。" />
+<meta name="author" content="JAEU" />
+<meta name="theme-color" content="#08090a" />
+<meta name="color-scheme" content="dark light" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="JAEU" />
+<meta property="og:description" content="凡是过往，皆为序章。" />
+<link rel="icon" href="assets/avatar.jpg" />
+<link rel="preload" href="assets/avatar.jpg" as="image" />
+<link rel="stylesheet" href="css/style.css" />
+<script>
+  // 在首帧前确定主题，避免闪白
+  (function () {
+    try {
+      var t = localStorage.getItem('jaeu-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  })();
+</script>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body class="page-home">
+
+<!-- 开场：两片玻璃向两侧滑开 -->
+<div class="opening" aria-hidden="true">
+  <div class="opening__panel opening__panel--l"></div>
+  <div class="opening__panel opening__panel--r"></div>
+  <span class="opening__mark">J7</span>
+</div>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<!-- 背景图形元素 -->
+<div class="bg-shapes" aria-hidden="true">
+  <span class="sh sh--ring"></span>
+  <span class="sh sh--cross"></span>
+  <span class="sh sh--plus"></span>
+  <span class="sh sh--square"></span>
+</div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="#top" aria-label="JAEU">
+      <span class="brand__mark">J7</span>
+      <span class="brand__text">JAEU<span class="brand__dot">.</span></span>
+    </a>
+
+    <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4.2" />
+        <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6" />
+      </svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20.5 14.4A8.7 8.7 0 0 1 9.6 3.5a8.7 8.7 0 1 0 10.9 10.9Z" />
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ 第一屏：头像 + 名字 ============ -->
+  <section class="hero" id="top">
+    <span class="bg-word" aria-hidden="true">JAEU</span>
+    <div class="hero__inner">
+
+      <div class="hero__text">
+        <p class="eyebrow reveal">
+          <span class="eyebrow__line" aria-hidden="true"></span>
+          PERSONAL SITE — 2026
+        </p>
+
+        <h1 class="hero__name reveal" data-delay="1">
+          JAEU<span class="accent" aria-hidden="true"></span>
+        </h1>
+
+        <p class="hero__quote reveal" data-delay="3">
+          凡是过往，皆为序章
+          <span class="hero__quote-en" aria-hidden="true">WHAT'S PAST IS PROLOGUE</span>
+        </p>
+      </div>
+
+      <figure class="hero__avatar reveal" data-delay="2">
+        <span class="hero__ring" aria-hidden="true"></span>
+        <span class="hero__ring hero__ring--dash" aria-hidden="true"></span>
+        <span class="hero__orbit" aria-hidden="true"><i></i></span>
+        <span class="hero__corner hero__corner--tl" aria-hidden="true"></span>
+        <span class="hero__corner hero__corner--br" aria-hidden="true"></span>
+        <img src="assets/avatar.jpg" width="720" height="720" alt="JAEU" fetchpriority="high" />
+        <figcaption class="hero__cap">J7 / 2026</figcaption>
+      </figure>
+    </div>
+
+    <a class="scroll-hint reveal" data-delay="4" href="#links" aria-label="向下滚动">
+      <span>SCROLL</span>
+      <i aria-hidden="true"></i>
+    </a>
+  </section>
+
+  <!-- ============ 第二屏：链接 ============ -->
+  <section class="section links" id="links">
+    <div class="wrap links__grid">
+
+      <div class="links__main">
+        <ul class="rows">
+          <li class="reveal">
+            <a href="https://github.com/Jaeu7" target="_blank" rel="noreferrer noopener">
+              <span class="rows__idx">01</span>
+              <span class="rows__body">
+                <span class="rows__name">GitHub<span class="rows__arrow" aria-hidden="true">↗</span></span>
+                <span class="rows__meta">github.com/Jaeu7</span>
+              </span>
+            </a>
+          </li>
+
+          <li class="reveal">
+            <a href="https://space.bilibili.com/1723035382" target="_blank" rel="noreferrer noopener">
+              <span class="rows__idx">02</span>
+              <span class="rows__body">
+                <span class="rows__name">Bilibili<span class="rows__arrow" aria-hidden="true">↗</span></span>
+                <span class="rows__meta">space.bilibili.com/1723035382</span>
+              </span>
+            </a>
+          </li>
+
+          <li class="reveal">
+            <a href="mailto:jaeu07@qq.com">
+              <span class="rows__idx">03</span>
+              <span class="rows__body">
+                <span class="rows__name">Email<span class="rows__arrow" aria-hidden="true">→</span></span>
+                <span class="rows__meta">jaeu07@qq.com</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="links__deco reveal" data-delay="1" aria-hidden="true">
+        <svg viewBox="0 0 420 420" fill="none">
+          <g class="deco-line">
+            <circle cx="210" cy="210" r="164" />
+            <path d="M210 26v-14M210 394v14M26 210H12M394 210h14" />
+          </g>
+          <g class="deco-dash">
+            <circle cx="210" cy="210" r="120" stroke-dasharray="1 9" />
+            <circle cx="210" cy="210" r="42" stroke-dasharray="1 6" />
+          </g>
+          <g class="deco-arc">
+            <circle cx="210" cy="210" r="150" stroke-dasharray="72 400" stroke-linecap="round" />
+          </g>
+          <g class="deco-thin">
+            <circle cx="210" cy="210" r="74" />
+            <path d="M310 110h46v46" />
+            <rect x="300" y="286" width="46" height="46" transform="rotate(16 323 309)" />
+            <path d="M64 300h26M77 287v26" />
+          </g>
+          <g class="deco-dot">
+            <circle cx="210" cy="210" r="4" />
+            <circle cx="210" cy="46" r="3" />
+          </g>
+          <g class="deco-line">
+            <path d="M210 210H10" stroke-dasharray="2 6" />
+            <path d="M210 210v186" stroke-dasharray="2 6" />
+          </g>
+          <g class="deco-dots">
+            <circle cx="42" cy="44" r="1.5" /><circle cx="60" cy="44" r="1.5" /><circle cx="78" cy="44" r="1.5" />
+            <circle cx="42" cy="62" r="1.5" /><circle cx="60" cy="62" r="1.5" /><circle cx="78" cy="62" r="1.5" />
+            <circle cx="42" cy="80" r="1.5" /><circle cx="60" cy="80" r="1.5" /><circle cx="78" cy="80" r="1.5" />
+          </g>
+        </svg>
+        <span class="deco__tag">J7 — 2026</span>
+      </aside>
+
+      <div class="outro">
+        <a class="totop" href="#top">
+          <span class="totop__arrow" aria-hidden="true">↑</span>
+          回到顶部
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="footer__text">© <span id="year">2026</span> JAEU</span>
+    <span class="footer__mark">J7</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
